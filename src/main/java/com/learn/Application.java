@@ -1,9 +1,10 @@
 package com.learn;
 
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Application {
-    private static final Logger log = Logger.getLogger(String.valueOf(Application.class));
+    private static final Logger log = LogManager.getLogger(Application.class);
 
     public static void main(String[] args) {
         log.info("Class.Application started");
